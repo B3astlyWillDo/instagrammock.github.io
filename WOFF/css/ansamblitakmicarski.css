@@ -1,0 +1,119 @@
+		#darken{
+			background: rgb(0,0.5,0,0.7);
+			height: 95vh;
+		}
+		#image-holder{
+			height: 95vh;
+		}
+
+		#carousel-holder{
+			position: absolute;
+			width: 100vw;
+			height: 80vh;
+			top: 15vh;
+			z-index: 10;
+		}
+		#carousel-ans{
+			width: 50%;
+			position: relative;
+			top:70px;
+		    background-image:url(../images/ansambl.jpg);
+		    background-position: center;
+		    background-size: cover;
+		    height: 500px;
+		    border:20px solid black;
+		    border-radius: 10px;
+		    transition: 0.5s ease;
+		    -webkit-transition: 0.5s ease;
+		}
+		#pointer-left, #pointer-right{
+			width: 60px;
+			height: 60px;
+			background: transparent;
+			font-size: 60px;
+			line-height: 50px;
+			top:200px;
+			color: white;
+			padding: 0px 5px 0px 5px;
+			position: absolute;
+			text-align: center;
+			transition: 0.5s ease;
+			-webkit-transition:0.5s ease;
+		}
+		#pointer-left{
+			left: 0px;
+		}
+		#pointer-right{
+			right: 0px;
+		}
+		#pointer-left:hover, #pointer-right:hover{
+            background: rgb(0,0,0);
+            color: #fff;
+            cursor: pointer;
+		}
+		#scores {
+			width: 95%;
+			height: 400px;
+					}
+		#scores ul{
+			clear:both;
+			width: 50%;
+			height: 300px;
+			padding: 10px 10px 10px 15%;
+		}
+		#scores span{
+			font-style: italic;
+			}
+		#scores li{
+			text-decoration: none;
+			list-style-type: none;
+			position: relative;
+			float: left;
+			padding: 25px;
+		}
+		 .score-numbers{
+			font-size: 70px;
+            text-align: center;
+		} 
+		.score-numbers:after{
+			content: "#";
+            font-size: 20px;
+            position: relative;
+            top:-35px;
+
+		}
+		#scores li:nth-child(1){
+			color:silver;
+			top:20px;
+		} 
+		#scores li:nth-child(2){
+			color:gold;
+			top:-10px;
+		} 
+		#scores li:nth-child(3){
+			color:brown;
+			top:40px;
+		}
+		.score-field{
+			background: lightblue;
+			width: 100%;
+		}
+		.scored-locations{
+			color:black;
+			font-style: italic;
+		}
+		@media screen and (max-width: 850px){
+			#carousel-ans{
+				width: 80%;
+				height: 350px;
+			}
+			#pointer-left,#pointer-right{
+				top:120px;
+			}
+			#scores ul{
+				width: 95%;
+			    padding-left: 5%}
+		#scores ul li{
+			padding: 23px;
+		}
+	}

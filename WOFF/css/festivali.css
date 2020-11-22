@@ -1,0 +1,155 @@
+		body{
+			overflow-x: hidden;
+		}
+		#text{
+			height: 80vh;
+			width: 100vw;
+			background-image: url(../images/ansambl.jpg);
+			background-position: center top; 
+		}
+		#wrapper{
+            width: 100vw;
+            background: #fff;
+            padding: 10px;
+		}
+		h1{
+			padding-bottom: 30px;
+		}
+		.selection-wrapper{
+			width: 100%;
+		}
+		h2{
+			float: left;
+			margin-right: 10px; 
+			margin-left:10px;
+		}
+		select{
+			float: left;
+			background: transparent;
+			color: black;
+			font-weight: bold;
+			width: 300px;
+			height: 50px;
+			margin-top: -12px;
+			font-family: Roboto Slab; 
+			font-size: 22px;
+			padding-left: 10px;  
+			border:2px solid black;
+			border-radius: 10px;
+		}
+		#center-text{
+			top:30vh;
+      color:#fff;
+		}
+		#darken{
+			height: 80vh;
+			background: rgb(0,0,0,0.7);
+		}
+       .scroll-item button{
+       	padding: 5px;
+       	background: transparent;
+       	border: 1px solid white;
+       	border-radius: 10px;
+       	font-weight: bold;
+       	color:#fff;
+        width: 200px;
+        font-size: 20px;
+       	transition: 0.5s ease;
+       	-webkit-transition:0.5s ease;
+       }
+       .scroll-item button:hover{
+       	background: #fff;
+       	border-color: #000;
+       	color:#000;
+       }
+     .swiper-container {
+      width: 100%;
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+    .swiper-slide {
+      background-position: center left;
+      background-size: cover;
+      width: 400px;
+      height: 400px;}
+
+      .slide-text{
+        position: absolute;
+        top:282px;
+        color:#000;
+        background: rgb(255,255,255,0.9);
+        width: 96%;
+        padding: 8px;
+      }
+      .slide-text h3{
+      	text-align: center;
+      	padding-bottom: 10px;
+      }
+      .slide-text h4{
+        text-align: center;
+        padding-bottom: 10px;
+        font-weight: lighter;
+      }
+      .likes{
+      	float: right;
+      	padding-right: 10px; 
+      	padding-top: 10px;
+      	font-size: 20px;
+      	color: #bd1c00;
+      }
+      .rating{
+      	float: left;
+      	padding-left: 10px;
+      	padding-top: 10px;
+      	font-size: 20px;
+      	color: #e3b932;
+      }
+      .slide-footer a{
+      	float: left;
+      	margin-left: 27%;
+      	padding: 5px;
+      	border-radius: 10px;
+      	border:2px solid black;
+      	text-decoration: none;
+      	background: transparent;
+      	color: #000;
+        transition: 0.3s ease-out;
+        -webkit-transition:0.3s ease-out;
+      }
+      .slide-footer a:hover{
+           background: #000;
+           color: #fff; 
+      }
+      @media screen and (max-width: 550px){
+      	  #center-text{
+         	left:-28vw;
+         }
+         select{
+          width: 60vw;
+         }
+      }
+      @media screen and (min-width: 550px) and (max-width: 850px){
+      	  #center-text{
+         	left:-15vw;
+         }
+      }
+       @media screen and (min-width: 850px) and (max-width: 1200px){
+          #center-text{
+          left:-8vw;
+         }
+      }
+      @media screen and (min-width:720px) and (max-width: 960px){
+         select{
+         	width: 40vw;
+         }
+      }
+      @media screen and (max-width: 960px){
+         h2{
+          float: none;
+         }
+         select{
+          float: none;
+          margin-top: 0;
+          margin-bottom: 30px;
+         }
+      }
